@@ -1,4 +1,5 @@
-/* https://dribbble.com/shots/2442798-Movie-Application/attachments/475341?mode=media */
+/* 참고 디자인
+https://dribbble.com/shots/2442798-Movie-Application/attachments/475341?mode=media */
 
 html{
     height: 100%;
@@ -30,11 +31,41 @@ body{
 
 /* loader */
 .loader{
+    width: 100%;
     height: 100%;
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
+    font-size: 32px;
+    font-weight: bold;
 }
+.loader:before{
+    content:'';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 10px solid #bbbfcf;
+    animation: 3s ease-in-out loader 1s infinite reverse;
+}
+
+@keyframes loader{
+    0%{
+        border-color: #bbbfcf;
+        transform: rotate(0deg);
+    }
+    33%{
+        border-color: red;
+    }
+    66%{
+        border-color: green;
+    }
+    100%{
+        border-color: #bbbfcf;
+        transform: rotate(360deg);
+    }
+}
+
 
 
 /* movies */

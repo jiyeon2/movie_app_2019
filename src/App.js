@@ -17,7 +17,7 @@ class App extends React.Component {
       "https://yts-proxy.now.sh/list_movies.json?sort_by=rating"
     );
     console.log(movies);
-    this.setState({ movies, isLoading: false });
+    // this.setState({ movies, isLoading: false });
   };
 
   componentDidMount() {
