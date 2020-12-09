@@ -13,6 +13,7 @@ function Movie({ year, title, summary, poster, genres }) {
           {genres.map((genre, index) => (
             <li className="genres__genre" key={index}>
               {genre}
+              {index === genres.length - 1 ? "" : ", "}
             </li>
           ))}
         </ul>
