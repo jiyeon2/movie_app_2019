@@ -35,3 +35,27 @@
 - 다른 api찾고 연결하는 거 연습하기
 - react hooks
 - react native
+---
+- react-router-dom: 네비게이션 만드는 패키지
+```jsx
+<Route path="/" exact={true} component={Home}>
+// <Route /> 컴포넌트는 path 와 보여줄 componenet를 받는다
+// exact={true} : 정확히 url이 path와 같을때만 해당 컴포넌트를 보여준다
+// 안하면 /, /about 모두 보여줌
+```
+- 네비게이션에서 \<a\>태그 사용하면 페이지 새로고침 발생. 리액트 프로그램이 종료됨..
+```jsx
+// a태그 대신 Link 사용
+// Link 컴포넌트는 반드시 Router컴포넌트 안에서 사용해야 한다
+// Link to속성값은 Route의 path값과 같아야한다
+// Router 컴포넌트는 HashRouter, BrowserRouter 등이 있다
+// 여기서 HashRouter를 쓴 이유는 github pages에 업로드할 때 설정하기 편하기 때문
+import {Link} from "react-router-dom";
+
+<HashRouter>
+    <Link to="/">Home</Link> 
+    <Link to="/about">About</Link>
+    <Route path="/" exact={true} component={Home}>
+    <Route path="/about" component={About}>
+<HashRouter/>
+```
