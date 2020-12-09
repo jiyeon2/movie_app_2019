@@ -8,7 +8,6 @@ class App extends React.Component {
     isLoading: true,
   };
 
-  // 비동기 동작이 끝날때까지 기다리라고 말해주는 키워드 async, await
   getMovies = async () => {
     const {
       data: {
