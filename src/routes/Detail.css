@@ -1,5 +1,6 @@
 .detail{
     max-width: 800px;
+    height: auto;
     padding: 2rem;
     margin: 0 auto;
     display: flex;

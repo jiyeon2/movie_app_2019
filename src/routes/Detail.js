@@ -16,26 +16,28 @@ class Detail extends React.Component {
     const { location } = this.props;
     if (location.state) {
       return (
-        <div className="detail">
-          <img
-            className="detail__image"
-            src={location.state.poster}
-            alt={`${location.state.title} poster`}
-            title={location.state.title}
-          />
-          <h2 className="detail__title">{location.state.title}</h2>
-          <div className="detail__year">{location.state.year}</div>
-          <div className="detail__genre">
-            {location.state.genres.map((genre, i) => {
-              return (
-                <span>
-                  {genre}
-                  {i === location.state.genres.length - 1 ? "" : ",  "}
-                </span>
-              );
-            })}
+        <div>
+          <div className="detail">
+            <img
+              className="detail__image"
+              src={location.state.poster}
+              alt={`${location.state.title} poster`}
+              title={location.state.title}
+            />
+            <h2 className="detail__title">{location.state.title}</h2>
+            <div className="detail__year">{location.state.year}</div>
+            <div className="detail__genre">
+              {location.state.genres.map((genre, i) => {
+                return (
+                  <span key={i}>
+                    {genre}
+                    {i === location.state.genres.length - 1 ? "" : ",  "}
+                  </span>
+                );
+              })}
+            </div>
+            <div className="detail__summary">{location.state.summary}</div>
           </div>
-          <div className="detail__summary">{location.state.summary}</div>
         </div>
       );
     } else {

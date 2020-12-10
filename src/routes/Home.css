@@ -61,7 +61,7 @@ https://dribbble.com/shots/2442798-Movie-Application/attachments/475341?mode=med
     align-items: flex-start;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px){
     .movies>a{
         width: 45%;
     }

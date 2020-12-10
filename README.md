@@ -2,6 +2,8 @@
 
 [ReactJS로 영화 웹 서비스 만들기(2019 업데이트 버전)](https://nomadcoders.co/react-fundamentals) 수강하며 만든 영화앱
 
+[**완성된 페이지 보러가기**](https://jiyeon2.github.io/movie_app_2019)
+
 
 ## 20201209
 - 부모 컴포넌트(App)에서 dynamic data저장하는 state가지고 있음. 
@@ -61,7 +63,7 @@ import {Link} from "react-router-dom";
 ```
 
 ## 20201210
-- [ ] movie component css 수정하기(넓은 화면일 때 높이가 제각각임)
+- movie component css 수정하기(넓은 화면일 때 높이가 제각각임)
 
 ### router props
 - Router 컴포넌트를 이용하여 페이지 간 정보를 전달할 수 있다. url에 따라 다른 화면(컴포넌트)을 보여줄 수 있다.
