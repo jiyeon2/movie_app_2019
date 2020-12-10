@@ -59,3 +59,17 @@ import {Link} from "react-router-dom";
     <Route path="/about" component={About}>
 <HashRouter/>
 ```
+
+## 20201210
+- [ ] movie component css 수정하기(넓은 화면일 때 높이가 제각각임)
+
+### router props
+- Router 컴포넌트를 이용하여 페이지 간 정보를 전달할 수 있다. url에 따라 다른 화면(컴포넌트)을 보여줄 수 있다.
+- 라우터 컴포넌트에는 {location, history, ... }이 props로 전달됨
+- Link to={{pathname:'/somewhere', state:'...' }} to에 전달한 객체의 state는 props.location으로 보내짐
+```jsx
+<Route path="/movie/:id" /> 
+<Link to={{pathname:`movie/${id}`}} /> 
+```
+- 페이지 표시할 때 필요한 정보가 없는 경우 ```history.push('/')```로 리다이렉션 할 수 있다
+- router 컴포넌트를 통하지 않고 url을 입력하여 접근한 경우 필요한 정보가 전달되지 않는다. render() 함수에서 필요한 정보가 있으면 jsx를 리턴한다. 아니면 null을 리턴하여 componentDidmount에서 리다이렉션 한다.

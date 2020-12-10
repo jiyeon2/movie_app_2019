@@ -5,8 +5,8 @@ function About(props) {
   console.log(props);
   return (
     <div className="about__container">
-      <span>askdjfla sdfklsdjs sdkjfdsjksdkf sdfjk sdklfjks d</span>
-      <span>sdf ,sd fsd</span>
+      <p>This page is maden using React.</p>
+      <p>React is so fun!</p>
     </div>
   );
 }

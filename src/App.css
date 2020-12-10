@@ -16,3 +16,6 @@ body{
     height: 100%;
     display: flex;
 }
+a{
+    text-decoration: none;
+}
