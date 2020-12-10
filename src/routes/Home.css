@@ -60,3 +60,9 @@ https://dribbble.com/shots/2442798-Movie-Application/attachments/475341?mode=med
     justify-content: space-around;
     align-items: flex-start;
 }
+
+@media screen and (min-width: 800px){
+    .movies>a{
+        width: 45%;
+    }
+}
